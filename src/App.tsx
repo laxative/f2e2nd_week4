@@ -1,5 +1,6 @@
 import routes from './router/Router';
-import './App.css';
+import './App.scss';
+import './App-desktop.scss';
 import { Route, Switch } from 'react-router';
 import { HashRouter } from 'react-router-dom';
 
