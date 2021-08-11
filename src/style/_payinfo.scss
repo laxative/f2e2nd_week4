@@ -2,6 +2,8 @@
   margin-top: 40px;
   padding: 0 17px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .payinfo-customer {
@@ -74,6 +76,83 @@ abbr[title='required'] {
 
     &::placeholder {
       color: #33333399;
+    }
+  }
+}
+
+.payinfo-commodity {
+  &-item {
+    width: 100%;
+    height: 145px;
+    background-color: #ebf5fb;
+    border-radius: 5px;
+    display: flex;
+    padding: 15px;
+  }
+}
+
+.commodity-item {
+  &-photo {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 105px;
+    }
+
+    &-3-hour {
+      mask: url('../assets/svg/photo_3hr.svg');
+      -webkit-mask: url('../assets/svg/photo_3hr.svg');
+      mask-size: 100% 100%;
+    }
+
+    &-24-hour {
+      mask: url('../assets/svg/photo_24hr.svg');
+      -webkit-mask: url('../assets/svg/photo_24hr.svg');
+      mask-size: 100% 100%;
+    }
+
+    &-30-days {
+      mask: url('../assets/svg/photo_30days.svg');
+      -webkit-mask: url('../assets/svg/photo_30days.svg');
+      mask-size: 100% 100%;
+    }
+
+    &-90-days {
+      mask: url('../assets/svg/photo_90days.svg');
+      -webkit-mask: url('../assets/svg/photo_90days.svg');
+      mask-size: 100% 100%;
+    }
+  }
+
+  &-info {
+    border-left: 2px solid #333333;
+    width: 50%;
+
+    h3 {
+      margin: 0;
+      font-size: 11px;
+      color: #333333;
+      padding-left: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    ul {
+      padding-left: 30px;
+      margin: 10px 0 0 0;
+      overflow: hidden;
+
+      li {
+        font-size: 8px;
+        color: #333333;
+        white-space: nowrap;
+      }
     }
   }
 }

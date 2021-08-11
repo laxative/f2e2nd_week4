@@ -81,26 +81,26 @@
   transition: 0.2s;
 
   &-3-hour {
-    mask: url('../assets/svg/CommodityList/photo_3hr.svg');
-    -webkit-mask: url('../assets/svg/CommodityList/photo_3hr.svg');
+    mask: url('../assets/svg/photo_3hr.svg');
+    -webkit-mask: url('../assets/svg/photo_3hr.svg');
     mask-size: 100% 100%;
   }
 
   &-24-hour {
-    mask: url('../assets/svg/CommodityList/photo_24hr.svg');
-    -webkit-mask: url('../assets/svg/CommodityList/photo_24hr.svg');
+    mask: url('../assets/svg/photo_24hr.svg');
+    -webkit-mask: url('../assets/svg/photo_24hr.svg');
     mask-size: 100% 100%;
   }
 
   &-30-days {
-    mask: url('../assets/svg/CommodityList/photo_30days.svg');
-    -webkit-mask: url('../assets/svg/CommodityList/photo_30days.svg');
+    mask: url('../assets/svg/photo_30days.svg');
+    -webkit-mask: url('../assets/svg/photo_30days.svg');
     mask-size: 100% 100%;
   }
 
   &-90-days {
-    mask: url('../assets/svg/CommodityList/photo_90days.svg');
-    -webkit-mask: url('../assets/svg/CommodityList/photo_90days.svg');
+    mask: url('../assets/svg/photo_90days.svg');
+    -webkit-mask: url('../assets/svg/photo_90days.svg');
     mask-size: 100% 100%;
   }
 

@@ -1,6 +1,6 @@
 import HeaderBar from '../components/HeaderBar';
-import Heading from '../components/Heading';
 import CustomerForm from './components/PayInfo/CustomerForm';
+import CommodityItem from './components/PayInfo/CommodityItem';
 import PageController from '../components/PageController';
 
 const PayInfo = () => {
@@ -8,8 +8,8 @@ const PayInfo = () => {
     <>
       <HeaderBar />
       <div className="payinfo-wrapper">
-        <Heading title={'信用卡資訊'} />
         <CustomerForm />
+        <CommodityItem />
       </div>
       <PageController />
     </>

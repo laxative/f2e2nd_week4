@@ -1,6 +1,9 @@
+import Heading from '../../../components/Heading';
+
 const CustomerForm = () => {
   return (
     <form className="payinfo-customer-form">
+      <Heading title={'信用卡資訊'} />
       <section className="payinfo-customer-form-row">
         <label htmlFor="credit-card">
           信用卡號 :
