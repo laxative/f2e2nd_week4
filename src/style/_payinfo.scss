@@ -1,0 +1,79 @@
+.payinfo-wrapper {
+  margin-top: 40px;
+  padding: 0 17px;
+  flex-grow: 1;
+}
+
+.payinfo-customer {
+  &-form {
+    &-row {
+      width: 100%;
+      margin: 15px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &-col {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    & label {
+      width: 100%;
+    }
+
+    &-button {
+      height: 32px;
+      background: linear-gradient(#fbfcfe, #ebf5fb, #d7e8f6);
+      border: 2px solid #33333333;
+      border-radius: 28px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        border-color: #333;
+      }
+    }
+
+    &-reminder {
+      color: #999999;
+      font-size: 10px;
+    }
+  }
+}
+
+abbr[title='required'] {
+  color: red;
+  margin-left: 10px;
+}
+
+.input-wrapper {
+  width: 100%;
+  height: 32px;
+  border: 2px solid #33333333;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: 0.2s;
+
+  &:focus-within {
+    border-color: #333333;
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 10px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #33333399;
+    }
+  }
+}
