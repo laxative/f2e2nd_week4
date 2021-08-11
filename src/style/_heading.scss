@@ -1,0 +1,17 @@
+.heading {
+  font-size: 21px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 5.78px;
+    height: 18.5px;
+    background-color: #57c1e7;
+    left: -15px;
+  }
+}

@@ -1,0 +1,16 @@
+.headerbar {
+  height: 100px;
+  .process-item {
+    &-icon {
+      width: 45px;
+      height: 45px;
+      line-height: 40px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    &-text {
+      font-size: 22px;
+    }
+  }
+}
