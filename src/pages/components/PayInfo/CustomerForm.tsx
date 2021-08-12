@@ -1,18 +1,56 @@
 import Heading from '../../../components/Heading';
+import { useSelector, useDispatch } from 'react-redux';
+import { SetPayInfo, PayInfoPayloadType } from '../../../actions/PayInfo';
+import { storeType } from '../../../store';
+import { ChangeEvent } from 'react';
 
 const CustomerForm = () => {
+  const payInfoPayload = useSelector(
+    (store: storeType) => store.payInfoReducer
+  );
+  const dispatch = useDispatch();
+  const inputValueChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
+    const [key, value] = [event.target.name, event.target.value];
+    let payload: PayInfoPayloadType = {
+      ...payInfoPayload
+    };
+    switch (key) {
+      case 'cardNumber':
+        payload.cardNumber = value;
+        break;
+      case 'goodthru':
+        payload.goodthru = value;
+        break;
+      case 'cvc':
+        payload.cvc = value;
+        break;
+      case 'name':
+        payload.name = value;
+        break;
+      default:
+        break;
+    }
+    dispatch(SetPayInfo(payload));
+  };
+
   return (
     <form className="payinfo-customer-form">
       <Heading title={'信用卡資訊'} />
       <section className="payinfo-customer-form-row">
-        <label htmlFor="credit-card">
+        <label htmlFor="cardNumber">
           信用卡號 :
           <strong>
             <abbr title="required">*</abbr>
           </strong>
         </label>
         <div className="input-wrapper">
-          <input type="text" placeholder="0000-0000-0000-0000" />
+          <input
+            name="cardNumber"
+            type="text"
+            placeholder="0000-0000-0000-0000"
+            value={payInfoPayload.cardNumber}
+            onChange={(event) => inputValueChangeHandler(event)}
+          />
         </div>
       </section>
       <section className="payinfo-customer-form-row">
@@ -24,7 +62,13 @@ const CustomerForm = () => {
             </strong>
           </label>
           <div className="input-wrapper">
-            <input type="text" placeholder="MM/YY" />
+            <input
+              name="goodthru"
+              type="text"
+              placeholder="MM/YY"
+              value={payInfoPayload.goodthru}
+              onChange={(event) => inputValueChangeHandler(event)}
+            />
           </div>
         </section>
         <section className="payinfo-customer-form-col">
@@ -35,7 +79,13 @@ const CustomerForm = () => {
             </strong>
           </label>
           <div className="input-wrapper">
-            <input type="text" placeholder="000" />
+            <input
+              name="cvc"
+              type="text"
+              placeholder="000"
+              value={payInfoPayload.cvc}
+              onChange={(event) => inputValueChangeHandler(event)}
+            />
           </div>
         </section>
       </section>
@@ -47,7 +97,13 @@ const CustomerForm = () => {
           </strong>
         </label>
         <div className="input-wrapper">
-          <input type="text" placeholder="As shown on the card" />
+          <input
+            name="name"
+            type="text"
+            placeholder="As shown on the card"
+            value={payInfoPayload.name}
+            onChange={(event) => inputValueChangeHandler(event)}
+          />
         </div>
       </section>
       <section className="payinfo-customer-form-row">
