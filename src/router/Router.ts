@@ -1,4 +1,3 @@
-import React from 'react';
 import CommodityList from '../pages/CommodityList';
 import PayInfo from '../pages/PayInfo';
 import CheckOrder from '../pages/CheckOrder';

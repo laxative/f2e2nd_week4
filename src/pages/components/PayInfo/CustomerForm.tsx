@@ -119,7 +119,12 @@ const CustomerForm = () => {
           </div>
         </section>
         <section className="payinfo-customer-form-col">
-          <button className="payinfo-customer-form-button">
+          <button
+            className="payinfo-customer-form-button"
+            onClick={(event) => {
+              event.preventDefault();
+            }}
+          >
             取得簡訊傳送交易密碼
           </button>
         </section>
