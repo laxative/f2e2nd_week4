@@ -2,6 +2,7 @@
   "name": "f2e2nd_week4",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://laxative.github.io/f2e2nd_week4/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -11,6 +12,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.8",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -26,6 +28,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "prettier-format": "prettier --config .prettierrc 'src/' --write",
     "eject": "react-scripts eject"

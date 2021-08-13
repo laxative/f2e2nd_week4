@@ -2,13 +2,13 @@ import routes from './router/Router';
 import './App.scss';
 import './App-desktop.scss';
 import { Route, Switch } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store/index';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Provider store={store}>
         <div className="App">
           <Switch>
@@ -25,7 +25,7 @@ function App() {
           </Switch>
         </div>
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
