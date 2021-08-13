@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# f2e2nd_week4
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## design draft
+
+The layout is designed by Mia, shows on
+[link](https://xd.adobe.com/spec/187a9285-5a15-42cd-725e-661cccfddda7-6e4b/screen/67c7aae9-c061-40a5-92e7-79ab8e946389/specs/) by Adobe XD.
 
 ## Available Scripts
 
